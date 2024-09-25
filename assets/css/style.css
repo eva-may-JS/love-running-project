@@ -188,6 +188,17 @@ main {
     color: #fafafa; 
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    /* This adds white space around the alt text if our image doesn't load */
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* footer */
 #social-networks {
     text-align: center;
