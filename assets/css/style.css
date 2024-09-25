@@ -214,6 +214,14 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large and landscape phones (570px and up) */
+@media screen and (min-width: 570px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tablets and larger */
 @media screen and (min-width: 768px) {
     /* Header */
@@ -272,12 +280,23 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Large devices (laptops and desktops) */
 @media screen and (min-width: 992px) {
+    /* nav bar */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
